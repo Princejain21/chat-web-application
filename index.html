@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <script defer src="ClientRequest/client.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Hi-fi</title>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logobox">
+            <img src="asset/chatLogo.png" alt="" class="logo">
+            <h1
+                style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;">
+                Welcome To Hi-fi chat </h1>
+        </div>
+
+        <div class="logout">
+            <img src="asset/logout.png" alt="" width="60px" height="60px" id="logout">
+        </div>
+    </nav>
+
+
+    <div class="main-container">
+        <div class="userList">
+            <ul class="listbox" id="listbox">
+            </ul>
+        </div>
+        <div style="width:80vw">
+
+            <div class="messageContainer">
+            </div>
+            <form action="" id="messageBox">
+                <input type="text" id="messageInp" class="messageInput">
+                <button id="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+ 
+
+</body>
+
+</html>

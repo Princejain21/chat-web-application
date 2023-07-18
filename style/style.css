@@ -1,0 +1,128 @@
+body{
+    background: linear-gradient(rgb(231, 158, 239),rgb(109, 39, 239));
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    width: 80vw;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.logout{
+    width: 50%;
+    text-align: right;
+}
+#logout:hover{
+    cursor: pointer;
+    zoom: 1.1;
+}
+
+.userList{
+    width: 15vw;
+    border: 2px solid black;
+    border-radius: 12px;
+
+}
+
+.listbox{
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    overflow: auto;
+    height: 70vh;
+}
+
+
+.listItem{
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.logobox{
+    position: relative;
+    left: 100px;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageContainer{
+    max-width:80vw;
+    height: 70vh;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow-y: auto;
+    margin-bottom: 5px;
+
+}
+
+.message{
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+.Right{
+    float:right;
+    clear: both;
+    
+
+
+}
+.Left{
+    float: left;
+    clear: both;
+}
+#messageBox{
+   width: 80vw; 
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#messageInp{
+    width: 90%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+ #btn{
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+
+ }
+ /* media query */
+ @media screen and (max-width: 700px) {
+    .userList {
+      display: none;
+    }
+
+    .main-container{
+        justify-content: center;
+    }
+
+  .logobox {
+    position: relative;
+    left: 41px;
+}
+}
